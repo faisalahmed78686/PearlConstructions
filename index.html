@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Construction | Your Dream, We Build It | Bidar & Hyderabad</title>
+    <meta name="description" content="Pearl Construction: 25+ years of building excellence in Bidar & Hyderabad. We specialize in commercial, residential, and industrial projects. Your vision, our expertise.">
+    <meta name="keywords" content="construction, builders, Bidar, Hyderabad, warehouses, commercial construction, residential projects">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pearlconstruction.com/">
+    <meta property="og:title" content="Pearl Construction | Your Dream, We Build It">
+    <meta property="og:description" content="25+ years of construction excellence in Bidar & Hyderabad. Specializing in warehouses, commercial spaces, residential projects & maintenance services.">
+    <meta property="og:image" content="https://pearlconstruction.com/images/social-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pearlconstruction.com/">
+    <meta property="twitter:title" content="Pearl Construction | Your Dream, We Build It">
+    <meta property="twitter:description" content="25+ years of construction excellence in Bidar & Hyderabad. Specializing in warehouses, commercial spaces, residential projects & maintenance services.">
+    <meta property="twitter:image" content="https://pearlconstruction.com/images/social-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --highlight: #f39c12;
+            --pearl: #f8f9fa;
+            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease-in-out;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.7;
+            color: #333;
+            background-color: var(--pearl);
+            overflow-x: hidden;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid var(--light);
+            border-radius: 50%;
+            border-top-color: var(--secondary);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Animated Navigation */
+        nav {
+            background: rgba(44, 62, 80, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(44, 62, 80, 0.98);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+            font-weight: 800;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+            display: block;
+            font-size: 1.1rem;
+            position: relative;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .section {
+            background: white;
+            margin-bottom: 4rem;
+            padding: 4rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.8rem;
+            margin-bottom: 2.5rem;
+            display: inline-block;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--highlight);
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        /* Hero Section with Animation */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 8rem 0;
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(230, 126, 34, 0.1) 0%, rgba(231, 76, 60, 0.1) 100%);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: var(--secondary);
+            display: block;
+            font-size: 1.2em;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--highlight);
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+        
+        .btn:hover::before {
+            width: 100%;
+        }
+        
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+            margin-left: 1.5rem;
+        }
+        
+        .btn-outline:hover {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .btn-outline::before {
+            background: var(--secondary);
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: var(--transition);
+            background: white;
+            position: relative;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(230, 126, 34, 0.1), transparent);
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: var(--secondary);
+        }
+        
+        .service-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover .service-img {
+            transform: scale(1.05);
+        }
+        
+        .service-info {
+            padding: 2.5rem;
+            position: relative;
+        }
+        
+        .service-info h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .service-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .service-info p {
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.8rem;
+        }
+        
+        .project-stats {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px dashed #ddd;
+            padding-top: 1.5rem;
+        }
+        
+        .stat {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .stat h4 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat p {
+            color: #777;
+            font-size: 0.95rem;
+        }
+        
+        /* Projects Section */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .project-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: var(--transition);
+            background: white;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: var(--secondary);
+        }
+        
+        .project-img-container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-img {
+            transform: scale(1.1);
+        }
+        
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 62, 80, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        
+        .project-overlay a {
+            color: white;
+            background: var(--secondary);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            transition: var(--transition);
+        }
+        
+        .project-overlay a:hover {
+            background: var(--highlight);
+            transform: translateY(-3px);
+        }
+        
+        .project-info {
+            padding: 2.5rem;
+        }
+        
+        .project-info h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            position: relative;
+        }
+        
+        .project-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .project-info p {
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.8rem;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            transition: var(--transition);
+        }
+        
+        .about-img:hover {
+            transform: scale(1.02);
+        }
+        
+        .experience-item {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: var(--secondary);
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-header h3 {
+            color: var(--primary);
+        }
+        
+        .experience-header p {
+            color: var(--secondary);
+            font-weight: 700;
+        }
+        
+        .experience-details {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-highlights {
+            list-style-type: none;
+        }
+        
+        .experience-highlights li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 2rem;
+            color: #555;
+        }
+        
+        .experience-highlights li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .stat-item {
+            background: linear-gradient(135deg, var(--secondary), var(--highlight));
+            color: white;
+            padding: 2.5rem;
+            text-align: center;
+            border-radius: 10px;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .stat-item h3 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-item p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .certifications {
+            margin-top: 3rem;
+        }
+        
+        .certification-item {
+            background: var(--pearl);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary);
+            transition: var(--transition);
+        }
+        
+        .certification-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .certification-item h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            position: relative;
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 6rem;
+            color: rgba(230, 126, 34, 0.1);
+            font-family: serif;
+            line-height: 1;
+            z-index: 0;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1.5rem;
+            border: 3px solid var(--secondary);
+        }
+        
+        .author-info h4 {
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+            font-size: 1.2rem;
+        }
+        
+        .author-info p {
+            color: #777;
+            font-size: 0.95rem;
+        }
+        
+        .rating {
+            color: var(--highlight);
+            margin: 0.5rem 0;
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-info {
+            margin-bottom: 3rem;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .contact-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info i {
+            margin-right: 1.5rem;
+            color: var(--secondary);
+            font-size: 1.3rem;
+            width: 25px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+            font-size: 1.3rem;
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-form {
+            background: var(--pearl);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-form h3 {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .contact-form h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 1.2rem;
+            margin-bottom: 1.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            border-color: var(--secondary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+        }
+        
+        .contact-form textarea {
+            height: 180px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, var(--dark), #1a252f);
+            color: white;
+            padding: 6rem 0 3rem;
+            margin-top: 6rem;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, var(--secondary), var(--highlight));
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .footer-section {
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 2rem;
+            position: relative;
+            font-size: 1.5rem;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .footer-section p {
+            color: #bbb;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: var(--transition);
+            display: block;
+            padding: 0.3rem 0;
+            position: relative;
+        }
+        
+        .footer-links a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 10px;
+        }
+        
+        .footer-links a:hover::before {
+            width: 20px;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+        
+        .footer-social a:hover {
+            background: var(--secondary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 4rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #bbb;
+            font-size: 1rem;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: var(--highlight);
+            transform: translateY(-5px);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .animate.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .about-content, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .about-img {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            .project-grid, .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            }
+            
+            h1 {
+                font-size: 3rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .nav-container {
+                padding: 1rem;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--primary);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s ease;
+                z-index: 99;
+            }
+            
+            nav ul.active {
+                left: 0;
+            }
+            
+            nav ul li {
+                margin: 1.5rem 0;
+            }
+            
+            nav ul li a {
+                font-size: 1.3rem;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .section {
+                padding: 3rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 6rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .btn {
+                display: block;
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+            }
+            
+            .section {
+                padding: 2.5rem 1.5rem;
+            }
+            
+            .project-grid, .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .stat-item h3 {
+                font-size: 2.5rem;
+            }
+            
+            .footer-section {
+                text-align: center;
+            }
+            
+            .footer-social {
+                justify-content: center;
+            }
+            
+            .footer-links a:hover {
+                padding-left: 0;
+            }
+        }
+    </style>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="https://via.placeholder.com/40x40" alt="Pearl Construction Logo">
+                <span>Pearl</span> Construction
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Your Dream, <span>We Build It</span></h1>
+            <p>With 25+ years of construction expertise across Bidar, Hyderabad and beyond, Pearl Construction transforms visions into enduring structures that stand the test of time.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Get Free Consultation</a>
+                <a href="#projects" class="btn btn-outline">Explore Our Work</a>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <!-- Services Section -->
+        <section class="section animate" id="services">
+            <h2><i class="fas fa-tools"></i> Our Comprehensive Services</h2>
+            <p class="section-intro">From concept to completion, we offer end-to-end construction solutions tailored to your specific needs. Our expertise spans across multiple sectors with a focus on quality, efficiency, and innovation.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Commercial Construction" class="service-img">
+                    <div class="service-info">
+                        <h3>Commercial Construction</h3>
+                        <p>Full-service commercial building solutions including warehouses, retail spaces, office buildings, and mixed-use developments. We specialize in DMart-style warehouses with optimized storage solutions and efficient layouts.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>25+</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h4>Bidar</h4>
+                                <p>To Hyderabad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Residential Projects" class="service-img">
+                    <div class="service-info">
+                        <h3>Residential Projects</h3>
+                        <p>From individual homes to apartment complexes, we build quality living spaces with attention to detail. Our residential projects feature earthquake-resistant designs, modern amenities, and sustainable materials.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>50+</h4>
+                                <p>Homes Built</p>
+                            </div>
+                            <div class="stat">
+                                <h4>Bidar</h4>
+                                <p>Region</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1581093196277-1c6dd0aac7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Interior Design" class="service-img">
+                    <div class="service-info">
+                        <h3>Interior Design & Execution</h3>
+                        <p>Complete interior solutions including space planning, material selection, and execution. We specialize in commercial interiors for retail spaces and offices, as well as high-end residential interiors.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>35+</h4>
+                                <p>Interiors Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h4>Modern</h4>
+                                <p>To Traditional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Electrical Services" class="service-img">
+                    <div class="service-info">
+                        <h3>Electrical & Maintenance</h3>
+                        <p>Complete electrical installations, wiring, and maintenance services for all types of buildings. Our certified electricians ensure safe, efficient, and code-compliant electrical systems.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>100+</h4>
+                                <p>Installations</p>
+                            </div>
+                            <div class="stat">
+                                <h4>24/7</h4>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Renovation Services" class="service-img">
+                    <div class="service-info">
+                        <h3>Renovation & Remodeling</h3>
+                        <p>Transform your existing space with our renovation services. We handle structural modifications, facade upgrades, and complete interior makeovers while maintaining building integrity.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>40+</h4>
+                                <p>Renovations</p>
+                            </div>
+                            <div class="stat">
+                                <h4>Heritage</h4>
+                                <p>Structures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Construction Consulting" class="service-img">
+                    <div class="service-info">
+                        <h3>Construction Consulting</h3>
+                        <p>Expert guidance on project planning, cost estimation, material selection, and quality control. Leverage our 25+ years of experience for your construction projects.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>60+</h4>
+                                <p>Projects Consulted</p>
+                            </div>
+                            <div class="stat">
+                                <h4>15-30%</h4>
+                                <p>Typical Savings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section class="section animate" id="projects">
+            <h2><i class="fas fa-project-diagram"></i> Our Featured Projects</h2>
+            <p class="section-intro">Explore our portfolio of successfully completed projects that showcase our expertise, attention to detail, and commitment to excellence in construction.</p>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="DMart Warehouse" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#contact" class="btn btn-outline">Get Quote</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DMart Warehouse, Hyderabad</h3>
+                        <p>Constructed a 150,000 sq.ft warehouse with optimized storage systems, loading docks, and office spaces. Implemented rapid construction techniques to meet aggressive deadlines without compromising quality.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>150,000</h4>
+                                <p>Square Feet</p>
+                            </div>
+                            <div class="stat">
+                                <h4>8</h4>
+                                <p>Months</p>
+                            </div>
+                            <div class="stat">
+                                <h4>DMart</h4>
+                                <p>Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Apollo Hospital" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#contact" class="btn btn-outline">Get Quote</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Apollo Hospital Wing, Secunderabad</h3>
+                        <p>Added a new 200-bed wing with specialized ICU facilities, operating theaters, and diagnostic centers. The project required meticulous coordination of complex MEP systems while maintaining hospital operations.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>85,000</h4>
+                                <p>Square Feet</p>
+                            </div>
+                            <div class="stat">
+                                <h4>14</h4>
+                                <p>Months</p>
+                            </div>
+                            <div class="stat">
+                                <h4>Apollo</h4>
+                                <p>Hospitals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Residential Complex" class="project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="btn">View Project</a>
+                            <a href="#contact" class="btn btn-outline">Get Quote</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Green Valley Residency, Bidar</h3>
+                        <p>Developed a gated community with 50 villas featuring modern amenities and sustainable design elements. The project included clubhouse, swimming pool, and landscaped gardens.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <h4>5</h4>
+                                <p>Acres</p>
+                            </div>
+                            <div class="stat">
+                                <h4>18</h4>
+                                <p>Months</p>
+                            </div>
+                            <div class="stat">
+                                <h4>50</h4>
+                                <p>Villas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="btn">View All Projects</a>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="section animate" id="about">
+            <h2><i class="fas fa-hard-hat"></i> About Pearl Construction</h2>
+            <p class="section-intro">Building excellence since 1999, we combine traditional craftsmanship with modern technology to deliver exceptional construction projects across multiple sectors.</p>
+            
+            <div class="about-content">
+                <div>
+                    <h3>25 Years of Building Excellence</h3>
+                    <p>Founded in 1999 by <strong>Salah</strong>, a Gulbarga University Civil Engineering graduate with extensive experience in Dubai and India, Pearl Construction has grown to become a trusted name in construction across Bidar, Hyderabad, and beyond.</p>
+                    <p>We combine traditional building values with modern techniques to deliver projects that stand the test of time. Our team of 50+ skilled professionals includes engineers, architects, and craftsmen dedicated to quality construction.</p>
+                    
+                    <h3 style="margin-top: 2.5rem;">Our Approach</h3>
+                    <ul class="experience-highlights" style="margin-top: 1.5rem;">
+                        <li><strong>Client-Centric:</strong> We listen first, then build solutions tailored to your needs</li>
+                        <li><strong>Quality Focus:</strong> Rigorous quality control at every construction stage</li>
+                        <li><strong>Transparent Process:</strong> Clear communication and documentation</li>
+                        <li><strong>Timely Delivery:</strong> 98% of projects completed on or before deadline</li>
+                        <li><strong>Sustainable Practices:</strong> Eco-friendly materials and methods where possible</li>
+                        <li><strong>Innovation Driven:</strong> Adopting new technologies for better results</li>
+                    </ul>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>25+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Skilled Professionals</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1605106702734-205df224ecce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Construction Team" class="about-img">
+                    
+                    <div class="certifications">
+                        <h3>Our Credentials</h3>
+                        <div class="certification-item">
+                            <h4>ISO 9001 Certified</h4>
+                            <p>Quality Management Systems</p>
+                        </div>
+                        <div class="certification-item">
+                            <h4>Class A Contractor</h4>
+                            <p>Government Approved</p>
+                        </div>
+                        <div class="certification-item">
+                            <h4>Safety Certified</h4>
+                            <p>OSHA Standards Compliant</p>
+                        </div>
+                        <div class="certification-item">
+                            <h4>Green Building Certified</h4>
+                            <p>Sustainable Construction Practices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="section animate" id="testimonials">
+            <h2><i class="fas fa-quote-left"></i> Client Testimonials</h2>
+            <p class="section-intro">Don't just take our word for it. Here's what our clients say about working with Pearl Construction.</p>
+            
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Pearl Construction delivered our warehouse project ahead of schedule despite challenging site conditions. Their attention to detail and problem-solving approach was impressive throughout the project.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Mehta" class="author-img">
+                        <div class="author-info">
+                            <h4>Rajesh Mehta</h4>
+                            <p>Director, DMart Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">We've worked with many contractors, but Salah's team stands out for their professionalism and quality workmanship. Our hospital expansion was completed with minimal disruption to operations.</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Priya Reddy" class="author-img">
+                        <div class="author-info">
+                            <h4>Dr. Priya Reddy</h4>
+                            <p>Medical Director, Apollo Hospitals</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">Our villa in Green Valley was built exactly as we envisioned. The team was responsive to all our requests and the finishing quality exceeded our expectations. Highly recommended!</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Vikram Patel" class="author-img">
+                        <div class="author-info">
+                            <h4>Vikram Patel</h4>
+                            <p>Homeowner, Green Valley</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section animate" id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+            <p class="section-intro">Ready to start your construction project? Get in touch with our team for a free consultation and quote.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Head Office:</strong> #45, Construction Plaza, Bidar, Karnataka 585403</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Hyderabad Branch:</strong> Plot 23, Tech Zone, Gachibowli, Hyderabad</p>
+                    <p><i class="fas fa-phone"></i> +91 9538306387 (Bidar Office)</p>
+                    <p><i class="fas fa-phone"></i> +91 9012345678 (Hyderabad Office)</p>
+                    <p><i class="fas fa-envelope"></i> salah_sdf@yahoo.com</p>
+                    <p><i class="fas fa-clock"></i> <strong>Working Hours:</strong> Mon-Sat 9:00 AM - 6:00 PM</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                    <h3 style="margin-top: 3rem;">Why Choose Us</h3>
+                    <ul class="experience-highlights">
+                        <li>25+ Years of Experience</li>
+                        <li>150+ Successful Projects</li>
+                        <li>ISO Certified Quality</li>
+                        <li>Transparent Pricing</li>
+                        <li>On-Time Project Delivery</li>
+                        <li>Post-Construction Support</li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Request a Quote</h3>
+                    <form id="quoteForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option>Commercial Construction</option>
+                            <option>Residential Projects</option>
+                            <option>Interior Design</option>
+                            <option>Electrical Work</option>
+                            <option>Renovation</option>
+                            <option>Consulting</option>
+                            <option>Other</option>
+                        </select>
+                        <textarea placeholder="Tell us about your project (size, location, requirements, etc.)" required></textarea>
+                        <button type="submit" class="btn">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Pearl Construction</h3>
+                <p>Pearl Construction has been building quality structures across Bidar, Hyderabad, and surrounding regions since 1999. We specialize in commercial, residential, and infrastructure projects with a commitment to excellence.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Warehouse Construction</a></li>
+                    <li><a href="#">Residential Buildings</a></li>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Electrical Works</a></li>
+                    <li><a href="#">Plumbing Solutions</a></li>
+                    <li><a href="#">Renovation</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Construction Consulting</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Bidar, Karnataka</p>
+                <p><i class="fas fa-phone"></i> +91 9538306387</p>
+                <p><i class="fas fa-envelope"></i> salah_sdf@yahoo.com</p>
+                
+                <h3 style="margin-top: 2rem;">Newsletter</h3>
+                <p>Subscribe to get updates on our latest projects and offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Pearl Construction. All Rights Reserved. | Designed by <a href="#" style="color: var(--secondary);">Salah</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+        
+        // Mobile Navigation
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            hamburger.innerHTML = navMenu.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Sticky Navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            const backToTop = document.querySelector('.back-to-top');
+            
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+                backToTop.classList.add('active');
+            } else {
+                nav.classList.remove('scrolled');
+                backToTop.classList.remove('active');
+            }
+        });
+        
+        // Scroll Animation
+        const animateElements = document.querySelectorAll('.animate');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Smooth Scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form Submission
+        const quoteForm = document.getElementById('quoteForm');
+        if (quoteForm) {
+            quoteForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your request! We will contact you shortly.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
